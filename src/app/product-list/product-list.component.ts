@@ -13,6 +13,11 @@ export class ProductListComponent {
   share() {
     window.alert('The product has been shared!');
   }
+
+  press(id: number){
+    alert(id)
+  }
+
 }
 
 

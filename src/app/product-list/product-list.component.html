@@ -1,11 +1,11 @@
 <div *ngFor="let product of products; index as productId">
   <h3>
-    <a
+    <button
       [title]="product.name + ' details'"
-      [routerLink]="['/products', productId]"
+      (click)="press(productId)"
     >
       {{ product.name }}
-    </a>
+    </button>
   </h3>
   <!-- . . . -->
 </div>
